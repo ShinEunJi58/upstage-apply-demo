@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NSR Smart Navigator - Presentation</title>
+  <script type="module">
+    import marp from 'https://cdn.jsdelivr.net/npm/@marp-team/marp-core@latest/+esm';
+    
+    const markdown = await fetch('./docs/presentation.md').then(r => r.text());
+    const { html, css } = marp.render(markdown);
+    
+    document.getElementById('presentation').innerHTML = html;
+    const style = document.createElement('style');
+    style.textContent = css;
+    document.head.appendChild(style);
+  </script>
+</head>
+<body>
+  <div id="presentation"></div>
+</body>
+</html>

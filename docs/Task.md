@@ -18,7 +18,7 @@
 - [x] **Task 1-1-3**: `docs/TechStack.md` 작성 (Python, Streamlit, LangChain 선정)
 
 ### Epic 1-2: Data Schema Design (데이터 설계)
-- [ ] **Task 1-2-1**: 운임 비교용 정형 데이터(Excel) 스키마 정의 (`Route`, `Distance`, `Cost`, `Time` 등)
+- [x] **Task 1-2-1**: 운임 비교용 정형 데이터(Excel) 스키마 정의 (`Route`, `Distance`, `Cost`, `Time` 등)
 - [ ] **Task 1-2-2**: 품목 추천용 비정형 데이터(Markdown/PDF) 구조 설계
 - [ ] **Task 1-2-3**: 시스템 프롬프트(System Prompt) 초안 작성 (페르소나 설정)
 
