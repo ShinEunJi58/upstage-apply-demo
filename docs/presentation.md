@@ -2,57 +2,68 @@
 marp: true
 theme: gaia
 paginate: true
-header: 'NSR Smart Navigator (KOTRA Portfolio)'
-footer: '2024-12-22 | [지원자 성명]'
 style: |
-  /* 폰트 및 기본 스타일 */
+  /* 바다 테마 - 기본 스타일 */
   section { 
     font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; 
     font-size: 30px; 
     padding: 70px;
-    background-color: #fff; /* 깨끗한 흰색 배경 */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
   }
   
-  /* 아이콘 중심의 리스트 스타일링 */
+  /* 일반 슬라이드 배경 */
+  section:not(.lead) {
+    background: linear-gradient(to bottom, #e0f7fa 0%, #ffffff 100%);
+    color: #01579b;
+  }
+  
+  /* 리스트 스타일링 */
   ul { list-style: none; padding-left: 0; }
-  li { margin-bottom: 20px; display: flex; align-items: start; }
-  li::before { 
-    content: '✅'; 
-    margin-right: 15px; 
-    font-size: 0.8em; 
-  }
+  li { margin-bottom: 20px; padding-left: 0; }
   
-  /* 제목 스타일 */
-  h1, h2 { color: #004085; } /* 신뢰감 있는 네이비 블루 */
-  h3 { color: #0056b3; margin-bottom: 30px; }
-
-  /* 강조 박스 스타일 */
+  /* 제목 스타일 - 바다 블루 */
+  section:not(.lead) h1, 
+  section:not(.lead) h2 { color: #006064; }
+  section:not(.lead) h3 { color: #00838f; margin-bottom: 30px; }
+  
+  /* 강조 박스 스타일 - 오션 블루 */
   blockquote {
-    background: #f8f9fa;
-    border-left: 10px solid #007bff;
+    background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%);
+    border-left: 10px solid #0277bd;
     margin: 20px 0;
     padding: 20px;
     font-size: 0.9em;
-    color: #555;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.05); /* 카드 느낌 그림자 */
+    color: #01579b;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
   }
-  blockquote::before { content: '💡 '; font-size: 1.2em; }
+  blockquote::before { content: '⚓ '; font-size: 1.2em; }
   
   /* 이미지 중앙 정렬 */
   img[alt~="center"] { display: block; margin: 0 auto; }
+  
+  /* 타이틀 슬라이드 - 깊은 바다 */
+  section.lead {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #0d47a1 0%, #01579b 50%, #006064 100%);
+    color: #ffffff;
+  }
+  
+  /* 가독성 향상 */
+  section h2 { line-height: 1.5; margin-bottom: 40px; }
+  section p { line-height: 1.8; }
 ---
 
 <!-- _class: lead -->
-<!-- _backgroundColor: #002b36 -->
-<!-- _color: white -->
 
 # 🚢 NSR Smart Navigator
-## 북극항로 수출 전략 에이전트
+## AI 기반 북극항로 수출 상담 어플리케이션
 
-**KOTRA 통상직 직무 지원 포트폴리오**
-무역 업무의 디지털 전환(DX)을 위한 AI 솔루션
-
-![bg right:40%](https://images.unsplash.com/photo-1541453282-55cb8ac4687d?auto=format&fit=crop&w=800&q=80)
+**KOTRA 통상직 직무 지원 포트폴리오**  
+중소기업을 위한 24시간 무역 컨설팅 서비스
 
 ---
 
@@ -65,8 +76,6 @@ style: |
 > **📉 수에즈 운하 사태 (Suez Canal Crisis)**
 > 2021년 에버기븐호 좌초 및 최근 홍해 리스크로 **전 세계 물류가 마비**된 사건.
 > 기존 항로의 취약성이 드러나자, **대체 항로(북극항로) 확보 필요성**이 폭발적으로 증가함.
-
-![bg left:30%](https://images.unsplash.com/photo-1616401776540-34538ecb978a?auto=format&fit=crop&w=800&q=80)
 
 ---
 
@@ -105,48 +114,102 @@ style: |
 
 ## 4. 핵심 가치 (Value Proposition)
 
-1.  **실시간 데이터 분석**
-    *   뉴스, 해빙 농도 등 변동성 데이터를 실시간 반영
-2.  **맞춤형 컨설팅**
-    *   화물 품목과 목적지에 따른 최적 경로 제안
-3.  **무역 업무 효율화 (DX)**
-    *   단순 정보 검색은 AI에게, 사람은 고부가가치 의사결정에 집중
+<div style="display: flex; justify-content: space-between; gap: 20px;">
+
+<div style="flex: 1; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 30px; border-radius: 15px; text-align: center;">
+
+### 📊 실시간 데이터 분석
+뉴스, 해빙 농도 등 변동성 데이터를 실시간 반영
+</div>
+
+<div style="flex: 1; background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%); padding: 30px; border-radius: 15px; text-align: center;">
+
+### 🎯 맞춤형 컨설팅
+화물 품목과 목적지에 따른 최적 경로 제안
+</div>
+
+<div style="flex: 1; background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); padding: 30px; border-radius: 15px; text-align: center;">
+
+### ⚡ 무역 업무 효율화
+단순 정보 검색은 AI에게, 사람은 고부가가치 의사결정에 집중
+</div>
+
+</div>
 
 ---
 
 <!-- header: 'Navigator' -->
 
 ## 5. 핵심 기능 I : 북극항로 경제성 진단
-**[NSR Cost Calculator]**
+**[NSR Cost Calculator]** 💰
 
-*   **기능**: 기존 수에즈 항로 vs 북극항로 비교 분석
-    *   운항 거리 (km) & 예상 소요 시간 (Lead Time) & 연료 절감액 비교
-*   **Tech**: **Python Pandas** 활용
-    *   **Pandas란?**: "파이썬 안의 엑셀". 수만 줄의 운임 데이터를 0.1초 만에 로드하고 계산해주는 강력한 데이터 분석 도구.
+<div style="display: flex; gap: 30px;">
+
+<div style="flex: 1;">
+
+**기능**
+- 기존 수에즈 항로 vs 북극항로 비교 분석
+- 운항 거리 (km) & 예상 소요 시간 (Lead Time) & 연료 절감액 비교
+</div>
+
+<div style="flex: 1; background: #e1f5fe; padding: 20px; border-radius: 10px;">
+
+**Tech: Python Pandas** 🐼
+
+"파이썬 안의 엑셀". 수만 줄의 운임 데이터를 0.1초 만에 로드하고 계산해주는 강력한 데이터 분석 도구.
+</div>
+
+</div>
 
 ---
 
 ## 6. 핵심 기능 II : 지정학적 리스크 모니터링
-**[Risk Radar]**
+**[Risk Radar]** ⚠️
 
-*   **기능**: **[안전 / 주의 / 위험]** 신호등 형태의 리스크 브리핑
-    *   러시아 제재 뉴스 모니터링
-    *   북극 해빙 농도 데이터 분석
-*   **Tech**: **LangChain Web Search**
-    *   **역할**: AI에게 **"실시간 인터넷 검색"** 능력을 부여하여, 학습하지 않은 최신 뉴스(러시아 제재, 빙하 상황)를 답변에 반영.
+<div style="display: flex; gap: 30px;">
+
+<div style="flex: 1;">
+
+**기능**
+- **[안전 / 주의 / 위험]** 신호등 형태의 리스크 브리핑
+- 러시아 제재 뉴스 모니터링
+- 북극 해빙 농도 데이터 분석
+</div>
+
+<div style="flex: 1; background: #fff3e0; padding: 20px; border-radius: 10px;">
+
+**Tech: LangChain Web Search** 🔍
+
+AI에게 **"실시간 인터넷 검색"** 능력을 부여하여, 학습하지 않은 최신 뉴스(러시아 제재, 빙하 상황)를 답변에 반영.
+</div>
+
+</div>
 
 ---
 
 <!-- header: '' -->
 
 ## 7. 핵심 기능 III : 수출 유망 품목 추천
-**[Item Matcher]**
+**[Item Matcher]** 📦
 
-*   **기능**: 북극항로(빠른 배송)에 적합한 품목 추천
-    *   **HS Code (품목분류코드)** 안내: 상품의 '주민등록번호'. 관세와 규제의 기준.
-*   **Tech**: **LLM & RAG (검색 증강 생성)**
-    *   **LLM (거대언어모델)**: 사람처럼 말을 이해하는 AI (예: ChatGPT).
-    *   **RAG란?**: **"오픈북 테스트"**. AI가 모르는 내부 정보(유망 품목 리스트)를 슬쩍 참고해서 정확하게 답변하는 기술.
+<div style="display: flex; gap: 30px;">
+
+<div style="flex: 1;">
+
+**기능**
+- 북극항로(빠른 배송)에 적합한 품목 추천
+- **HS Code (품목분류코드)** 안내: 상품의 '주민등록번호'. 관세와 규제의 기준.
+</div>
+
+<div style="flex: 1; background: #f3e5f5; padding: 20px; border-radius: 10px;">
+
+**Tech: LLM & RAG** 🤖
+
+- **LLM (거대언어모델)**: 사람처럼 말을 이해하는 AI (ChatGPT)
+- **RAG**: **"오픈북 테스트"**. AI가 모르는 내부 정보(유망 품목 리스트)를 참고해서 정확하게 답변하는 기술.
+</div>
+
+</div>
 
 ---
 
