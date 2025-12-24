@@ -26,6 +26,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        # Just a placeholder for now as we don't have tests yet
-        # But we can verify imports work
-        python -c "import streamlit; import pandas; print('Dependencies installed successfully')"
+        # Verify app dependencies and syntax
+        python -c "import streamlit; import pandas; import plotly; print('Dependencies installed successfully')"
+        # Smoke test: Try importing the main app file to check for syntax errors
+        python -c "import app; print('App syntax verified')"
