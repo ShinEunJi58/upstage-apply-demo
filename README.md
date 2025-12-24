@@ -1,3 +1,14 @@
+---
+title: NSR Smart Navigator
+emoji: 🚢
+colorFrom: blue
+colorTo: cyan
+sdk: streamlit
+sdk_version: 1.31.0
+app_file: app.py
+pinned: false
+---
+
 # NSR Smart Navigator - 북극항로 수출 전략 에이전트
 
 **NSR Smart Navigator**는 복잡한 북극항로(NSR: Northern Sea Route) 물류 데이터를 AI 에이전트가 실시간으로 분석하여, 유럽 수출을 희망하는 중소기업에게 최적의 물류 경로와 리스크 정보를 대화형으로 제공하는 서비스입니다.
